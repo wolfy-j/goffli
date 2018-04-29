@@ -28,7 +28,7 @@ import (
 )
 
 const (
-	vendor      = "wolfy-j"
+	vendor      = "spiral"
 	application = "goffli"
 )
 
