@@ -31,12 +31,11 @@ func (info *Media) String() string {
 
 // Stream information about single stream.
 type Stream struct {
-	Index         int    `json:"index"`
-	Type          string `json:"codec_type"`
-	CodecName     string `json:"codec_name"`
-	CodecLongName string `json:"codec_long_name"`
-	Bitrate       string `json:"bitRate"`
-	FPS           string
+	Index         int               `json:"index"`
+	Type          string            `json:"codec_type"`
+	CodecName     string            `json:"codec_name"`
+	CodecLongName string            `json:"codec_long_name"`
+	Bitrate       string            `json:"bitRate"`
 	Duration      float64           `json:"duration,string"`
 	Width         int64             `json:"width"`
 	Height        int64             `json:"height"`
