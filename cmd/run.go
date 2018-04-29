@@ -21,9 +21,9 @@
 package cmd
 
 import (
-	"git.spiralscout.com/wolfy-j/goffli/lib"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/spf13/cobra"
+	"github.com/spiral/goffli/lib"
+	"github.com/spiral/goffli/utils"
 )
 
 // runCmd represents the run command

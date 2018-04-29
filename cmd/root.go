@@ -21,10 +21,10 @@
 package cmd
 
 import (
-	"git.spiralscout.com/wolfy-j/goffli/ffmpeg"
-	"git.spiralscout.com/wolfy-j/goffli/scripts"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/spf13/cobra"
+	"github.com/spiral/goffli/ffmpeg"
+	"github.com/spiral/goffli/scripts"
+	"github.com/spiral/goffli/utils"
 )
 
 const (

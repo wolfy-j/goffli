@@ -1,7 +1,7 @@
 package lib
 
 import (
-	"git.spiralscout.com/wolfy-j/goffli/utils"
+	"github.com/spiral/goffli/utils"
 	"github.com/yuin/gopher-lua"
 )
 

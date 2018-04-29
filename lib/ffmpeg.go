@@ -2,9 +2,9 @@ package lib
 
 import (
 	"fmt"
-	"git.spiralscout.com/wolfy-j/goffli/ffmpeg"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/pkg/errors"
+	"github.com/spiral/goffli/ffmpeg"
+	"github.com/spiral/goffli/utils"
 	"github.com/yuin/gopher-lua"
 	"time"
 )

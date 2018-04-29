@@ -23,9 +23,9 @@ package cmd
 import (
 	"context"
 	"errors"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/google/go-github/github"
 	"github.com/spf13/cobra"
+	"github.com/spiral/goffli/utils"
 	"regexp"
 )
 

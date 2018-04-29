@@ -1,10 +1,10 @@
 package lib
 
 import (
-	"git.spiralscout.com/wolfy-j/goffli/ffmpeg"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
+	"github.com/spiral/goffli/ffmpeg"
+	"github.com/spiral/goffli/utils"
 	"os"
 	"strings"
 )

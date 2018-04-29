@@ -2,7 +2,7 @@ package lib
 
 import (
 	"errors"
-	"git.spiralscout.com/wolfy-j/goffli/utils"
+	"github.com/spiral/goffli/utils"
 	"github.com/yuin/gopher-lua"
 	"gopkg.in/AlecAivazis/survey.v1"
 	"os"

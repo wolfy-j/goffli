@@ -21,8 +21,8 @@
 package cmd
 
 import (
-	"git.spiralscout.com/wolfy-j/goffli/utils"
 	"github.com/spf13/cobra"
+	"github.com/spiral/goffli/utils"
 )
 
 func init() {
