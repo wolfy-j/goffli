@@ -1,0 +1,1 @@
+# Goffli is programmable ffmpeg wrapper with ability to share snippets using GitHub Gist.
