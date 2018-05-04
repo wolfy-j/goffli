@@ -9,7 +9,7 @@ Goffli is programmable and colorful ffmpeg wrapper with ability to share snippet
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
 
 ```
-go get github.com/spiral/goffli
+go get "github.com/spiral/goffli"
 ```
 
 You can also find banaries [here](https://github.com/spiral/goffli/releases).
