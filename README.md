@@ -41,32 +41,6 @@ You can also evaluate local lua snippet without downloading it from GitHub Gists
 goffli run snippet.lua [args]
 ```
 
-You can use this snippet as sample (full media copy):
-
-```lua
---@Description: Copy media content from one container to another
---@Version: 1.0 <Apr 22, 2018>
---@Source: https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
---@Author: Wolfy-J <wolfy.jd@gmail.com>
-
-local input = ask("Source file", "exists")
-local output = ask("Output file")
-
-if input == "" or output == "" then
-        print("\n<red>Script error: </reset><red+hb>not enough arguments</reset>\n")
-        return
-end
-
-require("ffmpeg").run({
-    "-i", input,
-    "-acodec", "copy",
-    "-vcodec", "copy",
-    "-y", output
-})
-
-print("<green+hb>Conversion complete!</reset>\n")
-```
-
 # Available Snippets
 
 * https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372 - Copy media content from one container to another (by @wolfy-j)
@@ -90,6 +64,44 @@ To display content of the snippet
 
 ```
 goffli snow [snippet-name]
+```
+
+# Coding the Snippet
+Coding the snippet is easy, you can utilize set of functions embedded to Lua machine in order to make usage more user friendly.
+
+### Metadata description
+
+
+### Input functions
+
+### Temp files and directories
+
+### FFmpeg functions
+
+### Sample Snippet
+
+```lua
+--@Description: Copy media content from one container to another
+--@Version: 1.0 <Apr 22, 2018>
+--@Source: https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
+--@Author: Wolfy-J <wolfy.jd@gmail.com>
+
+local input = ask("Source file", "exists")
+local output = ask("Output file")
+
+if input == "" or output == "" then
+        print("\n<red>Script error: </reset><red+hb>not enough arguments</reset>\n")
+        return
+end
+
+require("ffmpeg").run({
+    "-i", input,
+    "-acodec", "copy",
+    "-vcodec", "copy",
+    "-y", output
+})
+
+print("<green+hb>Conversion complete!</reset>\n")
 ```
 
 License:
