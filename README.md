@@ -15,7 +15,7 @@ go get "github.com/spiral/goffli"
 You can also find banaries [here](https://github.com/spiral/goffli/releases).
 
 # Usage
-By default Goffli only able to display media informarmation about given file:
+By default Goffli only able to display media information about given file:
 
 ```
 goffli info video.mp4
