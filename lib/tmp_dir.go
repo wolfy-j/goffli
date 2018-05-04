@@ -56,7 +56,7 @@ func (t tmpDir) dir(l *lua.LState) int {
 	return 1
 }
 
-// file returns new temp file name withing temp directory.
+// file returns new temp file name within temp directory.
 func (t tmpDir) file(l *lua.LState) int {
 	ext := l.OptString(1, "tmp")
 
