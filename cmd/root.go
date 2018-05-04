@@ -38,7 +38,7 @@ var registry *scripts.Registry
 var rootCmd = &cobra.Command{
 	Use:           "goffli",
 	SilenceErrors: true,
-	Short:         shortBanner(),
+	Short:         utils.Sprintf("\n%s\n", makeBanner()),
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -65,18 +65,17 @@ func init() {
 	}
 }
 
-func shortBanner() (out string) {
-	out += "\n              <yellow+hb>Goffli</reset> <green+hb>is programmable ffmpeg wrapper</reset>      "
-	out += "\n         <green+hb>with ability to share snippets using <yellow+hb>GitHub Gist</reset><green+hb>.</reset>"
+func makeBanner() *utils.Banner {
+	bn := utils.NewBanner(70)
 
-	out += "\n                      <white+hb>ffmpeg version</reset> "
+	bn.Add("<yellow+hb>Goffli</reset> <green+hb>is programmable ffmpeg wrapper</reset>")
+	bn.Add("<green+hb>with ability to share snippets using <yellow+hb>GitHub Gist</reset><green+hb>.</reset>")
 
 	if v, err := ffmpeg.Version(); err != nil {
-		out += utils.Sprintf("<red>%s</reset>\n", err)
-
+		bn.Add("<white+hb>ffmpeg version</reset> <red>%s</reset>", err)
 	} else {
-		out += utils.Sprintf("<cyan+hb>%s</reset>\n", v)
+		bn.Add("<white+hb>ffmpeg version</reset> <cyan+hb>%s</reset>", v)
 	}
 
-	return utils.Sprintf(out)
+	return bn
 }
