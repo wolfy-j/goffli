@@ -69,9 +69,9 @@ print("<green+hb>Conversion complete!</reset>\n")
 
 # Available Snippets
 
-URL                                                              | Author       | Description 
----                                                              | ---          | ----
-https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372 | Wolfy-J      | Copy media content from one container to another
+Snippet                                                          | Author       
+---                                                              | ---         
+[https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372](Copy media content from one container to another) | Wolfy-J      
 
 LIST IS HERE
 
