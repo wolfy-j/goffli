@@ -2,7 +2,7 @@ Goffli
 ==========
 [![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
 
-Goffli is programmable and colorful ffmpeg wrapper with ability to share snippets using GitHub Gist.
+Goffli is colorful and programmable ffmpeg wrapper with ability to share snippets using GitHub Gist.
 > When you hate to google ffmpeg snippets.
 
 # Installation
