@@ -70,16 +70,18 @@ goffli snow [snippet-name]
 Coding the snippet is easy, you can utilize set of functions embedded to Lua machine in order to make usage more user friendly.
 
 ### Metadata description
-
+@TODO
 
 ### Input functions
+@TODO
 
 ### Temp files and directories
+@TODO
 
 ### FFmpeg functions
+@TODO
 
 ### Sample Snippet
-
 ```lua
 --@Description: Copy media content from one container to another
 --@Version: 1.0 <Apr 22, 2018>
