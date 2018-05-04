@@ -25,7 +25,7 @@ goffli info video.mp4
 
 Snippet                                                                 | Description
 ----                                                                    | ---
-https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372        | Copy media content from one container to another
+`https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372`        | Copy media content from one container to another
 
 > Feel free to share your own snippets.
 
