@@ -1,4 +1,4 @@
-Goffli
+⚗️Goffli
 ==========
 [![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
 
