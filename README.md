@@ -21,7 +21,15 @@ By default Goffli only able to display media information about given file:
 goffli info video.mp4
 ```
 
-# Install/Update the snippet
+# Available Snippets
+
+Snippet                                                                 | Description
+----                                                                    | ---
+https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372        | Copy media content from one container to another
+
+> Feel free to share your own snippets.
+
+# Snippet related operations
 In order to extend Goffli capabilities install *lua* script with desired ffmpeg options. 
 
 ```
@@ -34,23 +42,7 @@ Once installed you can evaluate snippet using it's name
 goffli [snippet-name] [args]
 ```
 
-# Running local scripts
-You can also evaluate local lua snippet without downloading it from GitHub Gists.
-
-```
-goffli run snippet.lua [args]
-```
-
-# Available Snippets
-
-Snippet                                                                 | Description
-----                                                                    | ---
-https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372        | Copy media content from one container to another
-
-> Feel free to share your own snippets.
-
-# Snippet related operations
-To get list of all available snippets
+To get list of all installed snippets
 
 ```
 goffli list
@@ -66,6 +58,13 @@ To display content of the snippet
 
 ```
 goffli snow [snippet-name]
+```
+
+# Running local snippets
+You can also evaluate local lua snippet without downloading it from GitHub Gists.
+
+```
+goffli run snippet.lua [args]
 ```
 
 # Coding the Snippet
