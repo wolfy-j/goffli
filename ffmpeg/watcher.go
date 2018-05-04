@@ -84,7 +84,6 @@ func (w *watcher) watch() {
 			}
 
 			w.Output += update
-			update = ""
 		case <-w.done:
 			return
 		}
