@@ -71,7 +71,7 @@ print("<green+hb>Conversion complete!</reset>\n")
 
 * https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372 - Copy media content from one container to another (by @wolfy-j)
 
-> Feel free to suggest your own snippet for the list.
+> Feel free to share your own snippets.
 
 # Snippet related operations
 To get list of all available snippets
