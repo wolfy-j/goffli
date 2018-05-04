@@ -26,7 +26,7 @@ import (
 	luajson "layeh.com/gopher-json"
 )
 
-// Encode marshals given interface into value withing lua state (using json bridge)
+// Encode marshals given interface into value within lua state (using json bridge)
 func Encode(v interface{}, l *lua.LState) (lua.LValue, error) {
 	data, err := json.Marshal(v)
 	if err != nil {
