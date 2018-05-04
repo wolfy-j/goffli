@@ -30,7 +30,7 @@ import (
 func init() {
 	rootCmd.AddCommand(&cobra.Command{
 		Use:   "run [path]",
-		Short: "run local .lua script withing Goffli VM",
+		Short: "run local .lua script within Goffli VM",
 		Run:   localHandler,
 	})
 }
