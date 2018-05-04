@@ -1,5 +1,4 @@
-# Goffli
-RoadRunner
+Goffli
 ==========
 [![GoDoc](https://godoc.org/github.com/spiral/goffli?status.svg)](https://godoc.org/github.com/spiral/goffli)
 [![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
