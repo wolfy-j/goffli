@@ -23,9 +23,9 @@ goffli info video.mp4
 
 # Available Snippets
 
-Snippet | URL
-----    | ---
-copy    | `https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372`
+Snippet         | URL
+----            | ---
+copy-raw        | https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
 
 > Feel free to share your own snippets.
 
