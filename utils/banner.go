@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// Banner allows automatic line alignment withing desired width, banner includes color rendering.
+// Banner allows automatic line alignment within desired width, banner includes color rendering.
 type Banner struct {
 	width int
 	lines []string
