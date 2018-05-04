@@ -1,8 +1,9 @@
 # Goffli
 RoadRunner
 ==========
-[![GoDoc](https://godoc.org/github.com/spiral/roadrunner?status.svg)](https://godoc.org/github.com/spiral/roadrunner)
-[![Go Report Card](https://goreportcard.com/badge/github.com/spiral/roadrunner)](https://goreportcard.com/report/github.com/spiral/roadrunner)
+[![GoDoc](https://godoc.org/github.com/spiral/goffli?status.svg)](https://godoc.org/github.com/spiral/goffli)
+[![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
+
 Goffli is programmable and colorful ffmpeg wrapper with ability to share snippets using GitHub Gist.
 > When you hate to google ffmpeg snippets.
 
