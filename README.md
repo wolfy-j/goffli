@@ -74,7 +74,7 @@ LIST IS HERE
 > Feel free to suggest your own snippet for the list.
 
 # Snippet related operations
-To get list of all available snippets run
+To get list of all available snippets
 
 ```
 goffli list
