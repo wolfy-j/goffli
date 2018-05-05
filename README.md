@@ -95,31 +95,6 @@ Coding the snippet is easy, you can utilize set of functions embedded to Lua mac
 ### FFmpeg functions
 @TODO
 
-### Sample Snippet
-```lua
---@Description: Copy media content from one container to another
---@Version: 1.0 <Apr 22, 2018>
---@Source: https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
---@Author: Wolfy-J <wolfy.jd@gmail.com>
-
-local input = ask("Source file", "exists")
-local output = ask("Output file")
-
-if input == "" or output == "" then
-        print("\n<red>Script error: </reset><red+hb>not enough arguments</reset>\n")
-        return
-end
-
-require("ffmpeg").run({
-    "-i", input,
-    "-acodec", "copy",
-    "-vcodec", "copy",
-    "-y", output
-})
-
-print("<green+hb>Conversion complete!</reset>\n")
-```
-
 License:
 --------
 The MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information.
