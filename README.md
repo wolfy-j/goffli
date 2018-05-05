@@ -3,7 +3,7 @@ Goffli
 [![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
 
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
-> When you hate to google ffmpeg snippets.
+> When you hate to google ffmpeg bash scripts.
 
 # Installation
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
