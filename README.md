@@ -26,7 +26,7 @@ goffli info video.mp4
 Snippet         | URL
 ----            | ---
 copy            | https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
-videogif        | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
+video2gif        | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
 
 > Feel free to share your own snippets.
 
