@@ -79,15 +79,18 @@ func run(l *lua.LState) int {
 	utils.Log("ffmpeg", opts...)
 
 	var pb *utils.Progress
-	defer pb.Finish()
 
 	err := ffmpeg.Run(opts, func(c, t time.Duration) {
 		if pb == nil {
-			pb = utils.NewProgress(t, l.ToString(2) == "spinner")
+			pb = utils.NewProgress(t, l.ToString(2))
 		}
 
 		pb.Set(c)
 	})
+
+	if pb != nil {
+		pb.Finish()
+	}
 
 	if err != nil {
 		panic(errors.WithMessage(err, "ffmpeg.run"))

@@ -33,13 +33,13 @@ type Progress struct {
 }
 
 // NewProgress returns progress bar or spinner based on given total duration.
-func NewProgress(total time.Duration, forceSpinner bool) *Progress {
+func NewProgress(total time.Duration, pbType string) *Progress {
 	p := &Progress{}
 
-	if total == 0 || forceSpinner {
+	if total == 0 || pbType == "spinner" {
 		p.sp = spinner.New(spinner.CharSets[43], 100*time.Millisecond)
 		p.sp.Start()
-	} else {
+	} else if pbType != "none" {
 		p.bar = pb.New(int(total.Nanoseconds()))
 		p.bar.Width = 100
 		p.bar.ShowTimeLeft = true
@@ -59,10 +59,6 @@ func (p *Progress) Set(t time.Duration) {
 
 // Finish finishes the progress bar or spinner.
 func (p *Progress) Finish() {
-	if p == nil {
-		return
-	}
-
 	if p.bar != nil {
 		p.bar.Finish()
 	}

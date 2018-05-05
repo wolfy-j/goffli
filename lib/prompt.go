@@ -27,7 +27,6 @@ import (
 	"gopkg.in/AlecAivazis/survey.v1"
 	"os"
 	"strconv"
-	"strings"
 )
 
 // Prompter wraps set of default values (stack) and creates lua function to retrieve such values or request user input.
@@ -42,7 +41,7 @@ func NewPrompter(args []string) func(l *lua.LState) int {
 }
 
 func (p *Prompter) handler(l *lua.LState) int {
-	label := strings.Title(l.ToString(1))
+	label := l.ToString(1)
 
 	if label == "" {
 		panic("label is required")
