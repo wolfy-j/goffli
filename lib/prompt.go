@@ -100,13 +100,17 @@ func (p *Prompter) newValidator(t string) func(ans interface{}) error {
 
 			return nil
 		}
+	case "not-empty", "not_empty", "!empty":
+		return func(ans interface{}) error {
+			if ans.(string) == "" {
+				return errors.New("empty value")
+			}
+
+			return nil
+		}
 	}
 
 	return func(ans interface{}) error {
-		if ans.(string) == "" {
-			return errors.New("empty value")
-		}
-
 		return nil
 	}
 }
