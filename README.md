@@ -21,12 +21,24 @@ By default Goffli only able to display media information about given file:
 goffli info video.mp4
 ```
 
+In order to extend Goffli functionality load snippet using GitHub Gist url:
+
+```
+goffli get https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7 video2gif
+```
+
+You can use this snippet immediatelly:
+
+```
+goffli video2gif input.mp4 result.gif
+```
+
 # Available Snippets
 
 Snippet         | URL
 ----            | ---
 copy            | https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
-video2gif        | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
+video2gif       | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
 
 > Feel free to share your own snippets.
 
