@@ -78,7 +78,7 @@ func (w *watcher) watch() {
 				}
 
 				ft := w.rp.FindAllStringSubmatch(update, -1)
-				if len(ft) > 1 {
+				if len(ft) > 1 && len(ft[len(ft)-1]) > 1 {
 					w.callback(parseDuration(ft[len(ft)-1][1]), total)
 				}
 			}
@@ -114,6 +114,9 @@ func (w *watcher) Close() {
 // format 00:00:14.20
 func parseDuration(framePosition string) (duration time.Duration) {
 	segments := strings.Split(framePosition, ":")
+	if len(segments) != 3 {
+		return 0
+	}
 
 	if hours, err := strconv.Atoi(segments[0]); err == nil {
 		duration += time.Hour * time.Duration(hours)
