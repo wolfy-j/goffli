@@ -73,7 +73,7 @@ To display content of the snippet
 goffli snow [snippet-name]
 ```
 
-## Running local snippets
+### Running local snippets
 You can also evaluate local lua snippet without downloading it from GitHub Gists.
 
 ```
