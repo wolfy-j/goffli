@@ -74,7 +74,7 @@ goffli snow [snippet-name]
 ```
 
 ### Running local snippets
-You can also evaluate local lua snippet without downloading it from GitHub Gists.
+You can also evaluate local lua script without downloading it from GitHub Gists.
 
 ```
 goffli run snippet.lua [args]
