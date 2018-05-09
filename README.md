@@ -82,7 +82,7 @@ local quality = ask("Quality", null, "32")
 ```
 
 ### Temp files and directories
-In order to retrieve a name from of a temp directory
+In order to retrieve a name of a temp directory
 
 ```lua
 local tmp = require("tmp")
