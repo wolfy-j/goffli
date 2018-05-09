@@ -7,9 +7,10 @@ Goffli
 
 
 Goffli is simple to use interface and FFmpeg CLI wrapper that offers the ability to convert video, audio, and other multimedia files and streams using small Lua programs which you can share over Github Gist.
-> You can save and share this script with others. Every time you reuse it you will save all the time you spent in the past searching Google for ffmpeg bash scripts.
 
 ![Goffli](goffli.gif)
+
+> You can save and share this script with others. Every time you reuse it you will save all the time you spent in the past searching Google for ffmpeg bash scripts.
 
 # Installation
 Make sure to [install Golang 1.9](https://golang.org/doc/install) on your machine.
