@@ -9,7 +9,7 @@ package(){
 
 	bdir=goffli-${VERSION}-$2-$3
 	rm -rf package/$bdir && mkdir -p package/$bdir
-	GOOS=$2 GOARCH=$3 ./package.sh
+	GOOS=$2 GOARCH=$3 ./build.sh
 
 	if [ "$2" == "windows" ]; then
 		mv goffli package/$bdir/goffli.exe
