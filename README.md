@@ -1,6 +1,6 @@
 Goffli
 ==========
-[![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wolfy-j/goffli)](https://goreportcard.com/report/github.com/wolfy-j/goffli)
 
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
 > When you hate to google ffmpeg bash scripts.
@@ -11,7 +11,7 @@ Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
 
 ```
-go get "github.com/spiral/goffli"
+go get "github.com/wolfy-j/goffli"
 ```
 
 You can also find binaries [here](https://github.com/spiral/goffli/releases).
