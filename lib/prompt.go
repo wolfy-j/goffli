@@ -27,6 +27,7 @@ import (
 	"gopkg.in/AlecAivazis/survey.v1"
 	"os"
 	"strconv"
+	"fmt"
 )
 
 // Prompter wraps set of default values (stack) and creates lua function to retrieve such values or request user input.
@@ -46,6 +47,10 @@ func (p *Prompter) handler(l *lua.LState) int {
 
 	if label == "" {
 		panic("label is required")
+	}
+
+	if defaultValue != "" {
+		label = fmt.Sprintf("%s [%s]", label, defaultValue)
 	}
 
 	// progress to next input position
