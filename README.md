@@ -1,7 +1,7 @@
 Goffli
 ==========
 ![GitHub release](https://img.shields.io/github/release/wolfy-j/goffli.svg)
-![license](https://img.shields.io/github/license/wolfy-j/goffli.svg?color=blue)
+![license](https://img.shields.io/github/license/wolfy-j/goffli.svg?colorB=blue)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wolfy-j/goffli)](https://goreportcard.com/report/github.com/wolfy-j/goffli)
 ![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg)
 
