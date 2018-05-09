@@ -42,6 +42,7 @@ func NewPrompter(args []string) func(l *lua.LState) int {
 
 func (p *Prompter) handler(l *lua.LState) int {
 	label := l.ToString(1)
+	defaultValue := l.ToString(3)
 
 	if label == "" {
 		panic("label is required")
@@ -65,6 +66,10 @@ func (p *Prompter) handler(l *lua.LState) int {
 	if value == "" {
 		prompt := &survey.Input{Message: label}
 		survey.AskOne(prompt, &value, validator)
+	}
+
+	if value == "" && defaultValue != "" {
+		value = defaultValue
 	}
 
 	l.Push(lua.LString(value))
