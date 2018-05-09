@@ -1,0 +1,13 @@
+language: go
+
+sudo: required
+
+go:
+  - 1.8
+
+install:
+  - go get ./...
+
+script:
+  - go test ./... -race -v
+  - go build
