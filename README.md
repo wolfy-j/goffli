@@ -5,6 +5,8 @@ Goffli
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
 > When you hate to google ffmpeg bash scripts.
 
+![Goffli](goffli.gif)
+
 # Installation
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
 
