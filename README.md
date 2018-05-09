@@ -2,8 +2,8 @@ Goffli
 ==========
 [![Go Report Card](https://goreportcard.com/badge/github.com/spiral/goffli)](https://goreportcard.com/report/github.com/spiral/goffli)
 
-Goffli is colorful and programmable **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
-> When you hate to google ffmpeg snippets.
+Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
+> When you hate to google ffmpeg bash scripts.
 
 # Installation
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
@@ -21,12 +21,24 @@ By default Goffli only able to display media information about given file:
 goffli info video.mp4
 ```
 
+In order to extend Goffli functionality load snippet using GitHub Gist url:
+
+```
+goffli get https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7 video2gif
+```
+
+You can use this snippet immediatelly:
+
+```
+goffli video2gif input.mp4 result.gif
+```
+
 # Available Snippets
 
 Snippet         | URL
 ----            | ---
 copy            | https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
-videogif        | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
+video2gif       | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
 
 > Feel free to share your own snippets.
 
@@ -61,8 +73,8 @@ To display content of the snippet
 goffli snow [snippet-name]
 ```
 
-# Running local snippets
-You can also evaluate local lua snippet without downloading it from GitHub Gists.
+### Running local snippets
+You can also evaluate local lua script without downloading it from GitHub Gists.
 
 ```
 goffli run snippet.lua [args]
@@ -82,31 +94,6 @@ Coding the snippet is easy, you can utilize set of functions embedded to Lua mac
 
 ### FFmpeg functions
 @TODO
-
-### Sample Snippet
-```lua
---@Description: Copy media content from one container to another
---@Version: 1.0 <Apr 22, 2018>
---@Source: https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
---@Author: Wolfy-J <wolfy.jd@gmail.com>
-
-local input = ask("Source file", "exists")
-local output = ask("Output file")
-
-if input == "" or output == "" then
-        print("\n<red>Script error: </reset><red+hb>not enough arguments</reset>\n")
-        return
-end
-
-require("ffmpeg").run({
-    "-i", input,
-    "-acodec", "copy",
-    "-vcodec", "copy",
-    "-y", output
-})
-
-print("<green+hb>Conversion complete!</reset>\n")
-```
 
 License:
 --------
