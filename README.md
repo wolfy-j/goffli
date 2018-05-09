@@ -1,6 +1,9 @@
 Goffli
 ==========
+![GitHub release](https://img.shields.io/github/release/wolfy-j/goffli.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wolfy-j/goffli)](https://goreportcard.com/report/github.com/wolfy-j/goffli)
+![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg)
+
 
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
 > When you hate to google ffmpeg bash scripts.
