@@ -92,7 +92,45 @@ print(tmp.file("mp4"))
 ```
 
 ### FFmpeg functions
-@TODO
+Convert with spinner
+
+```lua
+require("ffmpeg").run({
+  "-i", input,
+  "-vcodec", "copy", 
+  "-y", output
+}, "spinner")
+```
+
+Convert with progress bar
+
+```lua
+require("ffmpeg").run({
+  "-i", input,
+  "-vcodec", "copy", 
+  "-y", output
+}, "progress")
+```
+
+Convert without any indication
+
+```lua
+require("ffmpeg").run({
+  "-i", input,
+  "-vcodec", "copy", 
+  "-y", output
+}, "none")
+```
+
+Get media and stream information:
+
+```lua
+local info = require("ffmpeg").probe(input)
+
+print(info.format.duration)
+```
+
+> Probe result [example](info.json).
 
 License:
 --------
