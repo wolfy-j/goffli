@@ -140,13 +140,13 @@ Display media file details
 require("ffmpeg").probe(input, true)
 ```
 
+> Returned result [example](info.json).
+
 Display media file streams
 
 ```lua
 require("ffmpeg").probe(input, false, true)
 ```
-
-> Returned result [example](info.json).
 
 License:
 --------
