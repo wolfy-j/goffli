@@ -19,7 +19,7 @@ Make sure to [install Golang 1.9](https://golang.org/doc/install) on your machin
 go get "github.com/wolfy-j/goffli"
 ```
 
-You can find binaries [here](https://github.com/wolfy-j/goffli/releases).
+Or you can find binaries [here](https://github.com/wolfy-j/goffli/releases).
 
 # Usage
 By default, Goffli can only display media information about a given file:
