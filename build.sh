@@ -1,23 +1,26 @@
 #!/bin/bash
 VERSION=1.0
 
-build(){
+cd $(dirname "${BASH_SOURCE[0]}")
+OD="$(pwd)"
+
+package(){
 	echo Packaging $1 Binary
 
 	bdir=goffli-${VERSION}-$2-$3
-	rm -rf build/$bdir && mkdir -p build/$bdir
-	GOOS=$2 GOARCH=$3 ./build.sh
+	rm -rf package/$bdir && mkdir -p package/$bdir
+	GOOS=$2 GOARCH=$3 ./package.sh
 
 	if [ "$2" == "windows" ]; then
-		mv goffli build/$bdir/goffli.exe
+		mv goffli package/$bdir/goffli.exe
 	else
-		mv goffli build/$bdir
+		mv goffli package/$bdir
 	fi
 
-	cp README.md build/$bdir
-	cp CHANGELOG.md build/$bdir
-	cp LICENSE build/$bdir
-	cd build
+	cp README.md package/$bdir
+	cp CHANGELOG.md package/$bdir
+	cp LICENSE package/$bdir
+	cd package
 
 	if [ "$2" == "linux" ]; then
 		tar -zcf $bdir.tar.gz $bdir
@@ -30,10 +33,12 @@ build(){
 }
 
 if [ "$1" == "package" ]; then
-	rm -rf build/
-	build "Windows" "windows" "amd64"
-	build "Mac" "darwin" "amd64"
-	build "Linux" "linux" "amd64"
-	build "FreeBSD" "freebsd" "amd64"
+	rm -rf package/
+	package "Windows" "windows" "amd64"
+	package "Mac" "darwin" "amd64"
+	package "Linux" "linux" "amd64"
+	package "FreeBSD" "freebsd" "amd64"
 	exit
 fi
+
+CGO_ENABLED=0 go build -ldflags "$LDFLAGS -extldflags '-static'" -o "$OD/goffli" main.go
