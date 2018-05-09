@@ -22,8 +22,8 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/spiral/goffli/lib"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/lib"
+	"github.com/wolfy-j/goffli/utils"
 	"os"
 )
 

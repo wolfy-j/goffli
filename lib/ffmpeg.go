@@ -23,8 +23,8 @@ package lib
 import (
 	"fmt"
 	"github.com/pkg/errors"
-	"github.com/spiral/goffli/ffmpeg"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/ffmpeg"
+	"github.com/wolfy-j/goffli/utils"
 	"github.com/yuin/gopher-lua"
 	"time"
 )

@@ -22,13 +22,13 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/spiral/goffli/ffmpeg"
-	"github.com/spiral/goffli/scripts"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/ffmpeg"
+	"github.com/wolfy-j/goffli/scripts"
+	"github.com/wolfy-j/goffli/utils"
 )
 
 const (
-	vendor      = "spiral"
+	vendor      = "wolfy-j"
 	application = "goffli"
 )
 

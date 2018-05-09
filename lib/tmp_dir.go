@@ -22,7 +22,7 @@ package lib
 
 import (
 	"fmt"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/utils"
 	"github.com/yuin/gopher-lua"
 	"io/ioutil"
 	"os"

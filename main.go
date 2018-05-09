@@ -20,7 +20,7 @@
 
 package main
 
-import "github.com/spiral/goffli/cmd"
+import "github.com/wolfy-j/goffli/cmd"
 
 func main() {
 	cmd.Execute()

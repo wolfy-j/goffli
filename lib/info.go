@@ -23,8 +23,8 @@ package lib
 import (
 	"github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
-	"github.com/spiral/goffli/ffmpeg"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/ffmpeg"
+	"github.com/wolfy-j/goffli/utils"
 	"os"
 	"strings"
 )

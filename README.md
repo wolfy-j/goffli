@@ -14,7 +14,7 @@ Make sure to [install Golang](https://golang.org/doc/install) at your machine.
 go get "github.com/wolfy-j/goffli"
 ```
 
-You can also find binaries [here](https://github.com/spiral/goffli/releases).
+You can also find binaries [here](https://github.com/wolfy-j/goffli/releases).
 
 # Usage
 By default Goffli only able to display media information about a given file:

@@ -23,7 +23,7 @@ package cmd
 import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
-	"github.com/spiral/goffli/utils"
+	"github.com/wolfy-j/goffli/utils"
 	"os"
 )
 
