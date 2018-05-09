@@ -1,0 +1,79 @@
+{
+  "format": {
+    "bit_rate": "2862730",
+    "duration": "1342.570667",
+    "filename": "example.m4v",
+    "format_long_name": "QuickTime / MOV",
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "nb_programs": 0,
+    "nb_streams": 4,
+    "probe_score": 100,
+    "size": "480427299",
+    "start_time": "0.000000",
+    "tags": {
+      "album": "Album name",
+      "artist": "Artist",
+      "comment": " ",
+      "compatible_brands": "mp42isomavc1",
+      "creation_time": "2014-04-19T11:52:19.000000Z",
+      "date": "2014-04-14",
+      "description": "Description.",
+      "encoder": " ",
+      "episode_id": "111",
+      "episode_sort": "11",
+      "genre": "Animation",
+      "hd_video": "1",
+      "major_brand": "mp42",
+      "media_type": "10",
+      "minor_version": "0",
+      "network": "Adult Swim",
+      "season_number": "1",
+      "show": "Rick and Morty",
+      "title": "Video Title",
+      "track": "11"
+    }
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_type": "video",
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "bitRate": "0",
+      "duration": "1342.5087",
+      "width": 1280,
+      "height": 720,
+      "tags": {
+        "creation_time": "2014-04-19T11:52:19.000000Z",
+        "encoder": "JVT/AVC Coding",
+        "language": "und"
+      }
+    },
+    {
+      "index": 1,
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "bitRate": "0",
+      "duration": "1342.570667",
+      "width": 0,
+      "height": 0,
+      "tags": {
+        "creation_time": "2014-04-19T11:52:19.000000Z",
+        "language": "eng"
+      }
+    },
+    {
+      "index": 2,
+      "codec_type": "video",
+      "codec_name": "mjpeg",
+      "codec_long_name": "Motion JPEG",
+      "bitRate": "0",
+      "duration": "1342.570667",
+      "width": 600,
+      "height": 600
+    }
+  ],
+  "Duration": 1342.570667,
+  "Size": 480427299
+}
