@@ -17,7 +17,7 @@ go get "github.com/spiral/goffli"
 You can also find binaries [here](https://github.com/spiral/goffli/releases).
 
 # Usage
-By default Goffli only able to display media information about given file:
+By default Goffli only able to display media information about a given file:
 
 ```
 goffli info video.mp4
@@ -44,38 +44,7 @@ video2gif       | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603c
 
 > Feel free to share your own snippets.
 
-# Snippet related operations
-In order to extend Goffli capabilities install *lua* script with desired ffmpeg options. 
-
-```
-goffli get [gist-url] [snippet-name]
-```
-
-Once installed you can evaluate snippet using it's name
-
-```
-goffli [snippet-name] [args]
-```
-
-To get list of all installed snippets
-
-```
-goffli list
-```
-
-To remove snippet from Goffli
-
-```
-goffli remove [snippet-name]
-```
-
-To display content of the snippet
-
-```
-goffli snow [snippet-name]
-```
-
-### Running local snippets
+### Local snippets
 You can also evaluate local lua script without downloading it from GitHub Gists.
 
 ```
