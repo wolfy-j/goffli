@@ -22,12 +22,12 @@ package lib
 
 import (
 	"errors"
+	"fmt"
 	"github.com/wolfy-j/goffli/utils"
 	"github.com/yuin/gopher-lua"
 	"gopkg.in/AlecAivazis/survey.v1"
 	"os"
 	"strconv"
-	"fmt"
 )
 
 // Prompter wraps set of default values (stack) and creates lua function to retrieve such values or request user input.
