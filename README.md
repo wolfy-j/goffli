@@ -61,7 +61,21 @@ Coding the snippet is easy, you can utilize set of functions embedded to Lua mac
 @TODO
 
 ### Temp files and directories
-@TODO
+To get name of temp directory
+
+```lua
+local tmp = require("tmp")
+
+print(tmp.dir())
+```
+
+To allocate temporary file with desired extension
+
+```lua
+local tmp = require("tmp")
+
+print(tmp.file("mp4"))
+```
 
 ### FFmpeg functions
 @TODO
