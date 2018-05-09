@@ -1,9 +1,9 @@
 Goffli
 ==========
-![GitHub release](https://img.shields.io/github/release/wolfy-j/goffli.svg?style=flat)
-![license](https://img.shields.io/github/license/wolfy-j/goffli.svg?color=blue&style=flat)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wolfy-j/goffli?style=flat)](https://goreportcard.com/report/github.com/wolfy-j/goffli)
-![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg?style=flat)
+![GitHub release](https://img.shields.io/github/release/wolfy-j/goffli.svg?style=flat-square)
+![license](https://img.shields.io/github/license/wolfy-j/goffli.svg?color=blue&style=flat-square)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wolfy-j/goffli?style=flat-square)](https://goreportcard.com/report/github.com/wolfy-j/goffli)
+![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg?style=flat-square)
 
 
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
