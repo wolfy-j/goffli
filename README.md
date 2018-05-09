@@ -6,34 +6,34 @@ Goffli
 ![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg?style=flat-square)
 
 
-Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
-> When you hate to google ffmpeg bash scripts.
+Goffli is simple interface and FFmpeg CLI wrapper that offers the ability to convert video, audio, and other multimedia files and streams using small Lua programs which you can share over Github Gist.
+> You can save and share this script with others. Every time you reuse it you will save all the time you spent in the past searching Google for ffmpeg bash scripts.
 
 ![Goffli](goffli.gif)
 
 # Installation
-Make sure to [install Golang 1.9](https://golang.org/doc/install) at your machine.
+Make sure to [install Golang 1.9](https://golang.org/doc/install) on your machine.
 
 ```
 go get "github.com/wolfy-j/goffli"
 ```
 
-You can also find binaries [here](https://github.com/wolfy-j/goffli/releases).
+You can find binaries [here](https://github.com/wolfy-j/goffli/releases).
 
 # Usage
-By default Goffli only able to display media information about a given file:
+By default, Goffli can only display media information about a given file:
 
 ```
 goffli info video.mp4
 ```
 
-In order to extend Goffli functionality load snippet using GitHub Gist url:
+If you are looking to extend the possibilities of Goffli's functionality, you can load snippets using a GitHub Gist url:
 
 ```
 goffli get https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7 video2gif
 ```
 
-You can use this snippet immediatelly:
+These snippets can then be used immediately:
 
 ```
 goffli video2gif input.mp4 result.gif
@@ -46,17 +46,17 @@ Snippet         | URL
 copy            | https://gist.github.com/wolfy-j/8009a8b3be1004d933e105494c64c372
 video2gif       | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603ce7
 
-> Feel free to share your own snippets.
+> Feel free to share your own snippets you create above for others in the community.
 
 ### Local snippets
-You can also evaluate local lua script without downloading it from GitHub Gists.
+You can also test your local Lua script without having to download it from GitHub Gists.
 
 ```
 goffli run snippet.lua [args]
 ```
 
 # Coding the Snippet
-Coding the snippet is easy, you can utilize set of functions embedded to Lua machine in order to make usage more user friendly.
+Writing the code for the snippet is easy. You can utilize a set of functions embedded to a Lua machine in order to make usage more user friendly.
 
 ### Input functions
 To ask user for the value (automatically populated thought command arguments)
