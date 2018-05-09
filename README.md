@@ -5,6 +5,8 @@ Goffli
 Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to share snippets over GitHub Gist.
 > When you hate to google ffmpeg bash scripts.
 
+![Goffli](goffli.gif)
+
 # Installation
 Make sure to [install Golang](https://golang.org/doc/install) at your machine.
 
@@ -15,7 +17,7 @@ go get "github.com/spiral/goffli"
 You can also find binaries [here](https://github.com/spiral/goffli/releases).
 
 # Usage
-By default Goffli only able to display media information about given file:
+By default Goffli only able to display media information about a given file:
 
 ```
 goffli info video.mp4
@@ -42,38 +44,7 @@ video2gif       | https://gist.github.com/wolfy-j/d4ece481eb8c9bd8a438967d77603c
 
 > Feel free to share your own snippets.
 
-# Snippet related operations
-In order to extend Goffli capabilities install *lua* script with desired ffmpeg options. 
-
-```
-goffli get [gist-url] [snippet-name]
-```
-
-Once installed you can evaluate snippet using it's name
-
-```
-goffli [snippet-name] [args]
-```
-
-To get list of all installed snippets
-
-```
-goffli list
-```
-
-To remove snippet from Goffli
-
-```
-goffli remove [snippet-name]
-```
-
-To display content of the snippet
-
-```
-goffli snow [snippet-name]
-```
-
-### Running local snippets
+### Local snippets
 You can also evaluate local lua script without downloading it from GitHub Gists.
 
 ```
@@ -83,14 +54,42 @@ goffli run snippet.lua [args]
 # Coding the Snippet
 Coding the snippet is easy, you can utilize set of functions embedded to Lua machine in order to make usage more user friendly.
 
-### Metadata description
-@TODO
-
 ### Input functions
-@TODO
+To ask user for the value (automatically populated thought command arguments)
+
+```lua
+print(ask("Value"))
+```
+
+To validate input value
+
+```lua
+local number = ask("Number", "number")
+local float = ask("Number", "float")
+local file = ask("File", "exists")
+local not_empty = ask("Not Empty", "!empty")
+```
+
+Default values 
+
+```lua
+local quality = ask("Quality", null, "32")
+```
 
 ### Temp files and directories
-@TODO
+To get name of temp directory
+
+```lua
+local tmp = require("tmp")
+print(tmp.dir())
+```
+
+To allocate temporary file with desired extension
+
+```lua
+local tmp = require("tmp")
+print(tmp.file("mp4"))
+```
 
 ### FFmpeg functions
 @TODO
