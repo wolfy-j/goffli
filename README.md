@@ -6,7 +6,7 @@ Goffli
 ![Travis](https://img.shields.io/travis/wolfy-j/goffli.svg?style=flat-square)
 
 
-Goffli is simple interface and FFmpeg CLI wrapper that offers the ability to convert video, audio, and other multimedia files and streams using small Lua programs which you can share over Github Gist.
+Goffli is simple to use interface and FFmpeg CLI wrapper that offers the ability to convert video, audio, and other multimedia files and streams using small Lua programs which you can share over Github Gist.
 > You can save and share this script with others. Every time you reuse it you will save all the time you spent in the past searching Google for ffmpeg bash scripts.
 
 ![Goffli](goffli.gif)
@@ -56,16 +56,16 @@ goffli run snippet.lua [args]
 ```
 
 # Coding the Snippet
-Writing the code for the snippet is easy. You can utilize a set of functions embedded to a Lua machine in order to make usage more user friendly.
+Writing the code for the snippet is easy. You can utilize a set of functions embedded to a Lua machine in order to make it more user friendly.
 
 ### Input functions
-To ask user for the value (automatically populated thought command arguments)
+You can ask a user to enter a value
 
 ```lua
 print(ask("Value"))
 ```
 
-To validate input value
+In order to validate a input value
 
 ```lua
 local number = ask("Number", "number")
@@ -81,14 +81,14 @@ local quality = ask("Quality", null, "32")
 ```
 
 ### Temp files and directories
-To get name of temp directory
+In order to retrieve a name from of a temp directory
 
 ```lua
 local tmp = require("tmp")
 print(tmp.dir())
 ```
 
-To allocate temporary file with desired extension
+In order to allocate a temporary file with a desired extension
 
 ```lua
 local tmp = require("tmp")
@@ -96,7 +96,7 @@ print(tmp.file("mp4"))
 ```
 
 ### FFmpeg functions
-Convert with spinner
+Convert with spinner- This will display a spinner  
 
 ```lua
 require("ffmpeg").run({
@@ -106,7 +106,7 @@ require("ffmpeg").run({
 }, "spinner")
 ```
 
-Convert with progress bar
+Convert with progress bar- This will display a progress bar
 
 ```lua
 require("ffmpeg").run({
@@ -116,7 +116,7 @@ require("ffmpeg").run({
 }, "progress")
 ```
 
-Convert without any indication
+Convert without showing any progress to a user
 
 ```lua
 require("ffmpeg").run({
@@ -126,7 +126,7 @@ require("ffmpeg").run({
 }, "none")
 ```
 
-Get media and stream information:
+Get media and stream details:
 
 ```lua
 local info = require("ffmpeg").probe(input)
@@ -134,7 +134,7 @@ local info = require("ffmpeg").probe(input)
 print(info.format.duration)
 ```
 
-Display media file information
+Display media file details
 
 ```lua
 require("ffmpeg").probe(input, true)
@@ -146,7 +146,7 @@ Display media file streams
 require("ffmpeg").probe(input, false, true)
 ```
 
-> Probe result [example](info.json).
+> Returned result [example](info.json).
 
 License:
 --------
