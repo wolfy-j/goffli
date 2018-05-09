@@ -54,18 +54,33 @@ goffli run snippet.lua [args]
 # Coding the Snippet
 Coding the snippet is easy, you can utilize set of functions embedded to Lua machine in order to make usage more user friendly.
 
-### Metadata description
-@TODO
-
 ### Input functions
-@TODO
+To ask user for the value (automatically populated thought command arguments)
+
+```lua
+print(ask("Value"))
+```
+
+To validate input value
+
+```lua
+local number = ask("Number", "number")
+local float = ask("Number", "float")
+local file = ask("File", "exists")
+local not_empty = ask("Not Empty", "!empty")
+```
+
+Default values 
+
+```lua
+local quality = ask("Quality", null, "32")
+```
 
 ### Temp files and directories
 To get name of temp directory
 
 ```lua
 local tmp = require("tmp")
-
 print(tmp.dir())
 ```
 
@@ -73,7 +88,6 @@ To allocate temporary file with desired extension
 
 ```lua
 local tmp = require("tmp")
-
 print(tmp.file("mp4"))
 ```
 
