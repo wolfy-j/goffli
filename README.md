@@ -97,7 +97,7 @@ print(tmp.file("mp4"))
 ```
 
 ### FFmpeg functions
-Convert with spinner- This will display a spinner  
+This will display a spinner  
 
 ```lua
 require("ffmpeg").run({
@@ -107,7 +107,7 @@ require("ffmpeg").run({
 }, "spinner")
 ```
 
-Convert with progress bar- This will display a progress bar
+This will display a progress bar
 
 ```lua
 require("ffmpeg").run({
@@ -117,7 +117,7 @@ require("ffmpeg").run({
 }, "progress")
 ```
 
-Convert without showing any progress to a user
+Run Ffmpeg without showing any progress to a user
 
 ```lua
 require("ffmpeg").run({
@@ -127,7 +127,7 @@ require("ffmpeg").run({
 }, "none")
 ```
 
-Get media and stream details:
+Get media and stream details
 
 ```lua
 local info = require("ffmpeg").probe(input)
