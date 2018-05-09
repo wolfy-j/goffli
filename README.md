@@ -8,7 +8,7 @@ Goffli is colorful and programmable (LUA) **FFmpeg CLI wrapper** with ability to
 ![Goffli](goffli.gif)
 
 # Installation
-Make sure to [install Golang](https://golang.org/doc/install) at your machine.
+Make sure to [install Golang 1.9](https://golang.org/doc/install) at your machine.
 
 ```
 go get "github.com/wolfy-j/goffli"
