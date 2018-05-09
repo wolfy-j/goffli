@@ -6,7 +6,7 @@
     "format_long_name": "QuickTime / MOV",
     "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
     "nb_programs": 0,
-    "nb_streams": 4,
+    "nb_streams": 3,
     "probe_score": 100,
     "size": "480427299",
     "start_time": "0.000000",
