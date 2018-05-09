@@ -9,5 +9,5 @@ install:
   - go get ./...
 
 script:
-  - go test ./... -race -v
   - go build
+  - go test ./... -race -v
