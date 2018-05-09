@@ -134,13 +134,13 @@ local info = require("ffmpeg").probe(input)
 print(info.format.duration)
 ```
 
-Render media file information
+Display media file information
 
 ```lua
 require("ffmpeg").probe(input, true)
 ```
 
-Render media file streams
+Display media file streams
 
 ```lua
 require("ffmpeg").probe(input, false, true)
