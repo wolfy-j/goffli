@@ -26,7 +26,7 @@ import (
 )
 
 // last N lines from ffmpeg to count as error(s).
-const errorLines = 1
+const errorLines = 2
 
 // extractError trims ffmpeg output to last n lines only.
 func extractError(err error, cmdErr string) error {
