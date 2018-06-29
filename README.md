@@ -10,7 +10,7 @@ Goffli is simple to use interface and FFmpeg CLI wrapper that offers the ability
 
 ![Goffli](goffli.gif)
 
-[!GIF](gif.gif)
+![GIF](gif.gif)
 
 > You can save and share this script with others. Every time you reuse it you will save all the time you spent in the past searching Google for ffmpeg bash scripts.
 
